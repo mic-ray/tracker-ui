@@ -1,7 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/Login/Login";
 const App = () => {
   return (
     <>
-      <h1>Tracker UI</h1>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </>
   );
 };
